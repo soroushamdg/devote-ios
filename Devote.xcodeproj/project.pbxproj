@@ -18,6 +18,7 @@
 		9082CB2628F6095D00198C71 /* DevoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082CB2528F6095D00198C71 /* DevoteUITestsLaunchTests.swift */; };
 		9082CB3328F60F2600198C71 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 9082CB3228F60F2600198C71 /* Sound */; };
 		9082CB3F28F613DC00198C71 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082CB3E28F613DC00198C71 /* Constant.swift */; };
+		9082CB4128F6214D00198C71 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082CB4028F6214D00198C71 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9082CB2528F6095D00198C71 /* DevoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9082CB3228F60F2600198C71 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		9082CB3E28F613DC00198C71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9082CB4028F6214D00198C71 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		9082CB3828F60F9700198C71 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9082CB4028F6214D00198C71 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				9082CB0D28F6095D00198C71 /* Persistence.swift in Sources */,
 				9082CB3F28F613DC00198C71 /* Constant.swift in Sources */,
+				9082CB4128F6214D00198C71 /* HideKeyboardExtension.swift in Sources */,
 				9082CB0628F6095C00198C71 /* ContentView.swift in Sources */,
 				9082CB1028F6095D00198C71 /* Devote.xcdatamodeld in Sources */,
 				9082CB0428F6095C00198C71 /* DevoteApp.swift in Sources */,
