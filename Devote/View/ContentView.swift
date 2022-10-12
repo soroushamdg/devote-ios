@@ -63,7 +63,8 @@ struct ContentView: View {
     //body
     var body: some View {
         NavigationView {
-            VStack{
+            ZStack{
+                VStack{
                 VStack(spacing: 16){
                     TextField("New Task", text: $task)
                         .padding()
@@ -84,7 +85,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .background(isButtonDisabled ? .gray : Color.pink)
                     .cornerRadius(10)
-
+                    
                 }
                 .padding()
                 
@@ -103,7 +104,15 @@ struct ContentView: View {
                     }
                     .onDelete(perform: deleteItems)
                 }
-                
+                .listStyle(InsetGroupedListStyle())
+                .shadow(radius: 12)
+                .padding(.vertical,0)
+                .frame(maxWidth: 640)
+                    
+            }
+            }
+            .onAppear(){
+                UITableView.appearance().backgroundColor = UIColor.clear
             }
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .toolbar {
@@ -111,7 +120,10 @@ struct ContentView: View {
                     EditButton()
                 }
             }
+            .background(BackgroundImageView()) 
+            .background(backgroundGradient.ignoresSafeArea(.all))
         }
+        .navigationViewStyle(.stack)
     }
 
     

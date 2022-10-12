@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9072652828F6F01000AFA45F /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072652728F6F01000AFA45F /* BackgroundImageView.swift */; };
 		9082CB0428F6095C00198C71 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082CB0328F6095C00198C71 /* DevoteApp.swift */; };
 		9082CB0628F6095C00198C71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9082CB0528F6095C00198C71 /* ContentView.swift */; };
 		9082CB0828F6095D00198C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9082CB0728F6095D00198C71 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9072652728F6F01000AFA45F /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		9082CB0028F6095C00198C71 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9082CB0328F6095C00198C71 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		9082CB0528F6095C00198C71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				9082CB0528F6095C00198C71 /* ContentView.swift */,
+				9072652728F6F01000AFA45F /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9082CB0D28F6095D00198C71 /* Persistence.swift in Sources */,
+				9072652828F6F01000AFA45F /* BackgroundImageView.swift in Sources */,
 				9082CB3F28F613DC00198C71 /* Constant.swift in Sources */,
 				9082CB4128F6214D00198C71 /* HideKeyboardExtension.swift in Sources */,
 				9082CB0628F6095C00198C71 /* ContentView.swift in Sources */,
