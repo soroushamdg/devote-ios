@@ -92,7 +92,7 @@ struct ContentView: View {
                                 showNewTaskItem = false
                             }
                         }
-                    NewTaskItemView()
+                    NewTaskItemView(isShowing: $showNewTaskItem)
                 }
             }
             .onAppear(){
