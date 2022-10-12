@@ -65,6 +65,8 @@ struct ContentView: View {
                         
                         Button {
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
+                            feedback.notificationOccurred(.success)
                         } label: {
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                                 .resizable()
@@ -79,6 +81,9 @@ struct ContentView: View {
                     // New task button
                     Button(action: {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: "mp3")
+                        feedback.notificationOccurred(.success)
+
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30,weight: .semibold,design: .rounded))
@@ -121,10 +126,6 @@ struct ContentView: View {
                         }
                     NewTaskItemView(isShowing: $showNewTaskItem)
                 }
-            }
-            .onAppear(){
-                UITableView.appearance().backgroundColor = UIColor.clear
-                print("background color is clear now")
             }
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .navigationBarHidden(true)
