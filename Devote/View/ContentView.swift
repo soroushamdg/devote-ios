@@ -75,10 +75,7 @@ struct ContentView: View {
                     }.padding().foregroundColor(.white)
                     
                     Spacer(minLength: 80)
-                    
-                   
-                    
-                    
+               
                     // New task button
                     Button(action: {
                         showNewTaskItem = true
@@ -103,10 +100,11 @@ struct ContentView: View {
                     }
                     .onDelete(perform: deleteItems)
                 }
-                .listStyle(InsetGroupedListStyle())
                 .shadow(radius: 12)
+                .listStyle(InsetGroupedListStyle())
                 .padding(.vertical,0)
                 .frame(maxWidth: 640)
+                .scrollContentBackground(.hidden)
                     
             }
                 if showNewTaskItem{
@@ -121,6 +119,7 @@ struct ContentView: View {
             }
             .onAppear(){
                 UITableView.appearance().backgroundColor = UIColor.clear
+                print("background color is clear now")
             }
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .navigationBarHidden(true)
